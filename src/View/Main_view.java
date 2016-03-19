@@ -59,7 +59,7 @@ public class Main_view extends JFrame implements Observer {
         if (arg != null){
             main_menu.setVisible(true);
             getContentPane().setVisible(false);
-            setContentPane(new JPanel());
+            setContentPane(new Landing_page(this.getContentPane().getBounds()));
         } else {
             JOptionPane.showMessageDialog(
                     this,
